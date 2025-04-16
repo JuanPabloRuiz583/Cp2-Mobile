@@ -16,13 +16,6 @@ export default function TelaHome({ navigation }) {
           Conectando doadores e comunidades para combater a fome com amor e solidariedade.
         </Text>
 
-        <TouchableOpacity style={styles.buttonLogin} onPress={() => navigation.navigate("TelaLogin")}>
-          <Text style={styles.buttonText}>Já tenho conta</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate("TelaCadastro")}>
-          <Text style={styles.buttonTextRegister}>Quero me cadastrar</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -32,52 +25,63 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F1E0C6", // Bege Claro
+    paddingHorizontal: 20,
   },
   content: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    padding: 20,
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: "bold",
-    color: "#555555", // Cinza escuro
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: "#555555",
-    textAlign: "center",
-    marginBottom: 20,
+    gap: 20,
   },
   image: {
-    width: 250,
-    height: 200,
-    marginBottom: 30,
+    width: 160,
+    height: 160,
+    marginBottom: 20,
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "bold",
+    color: "#555555", // Cinza Escuro
+    textAlign: "center",
+  },
+  subtitle: {
+    fontSize: 18,
+    color: "#555555",
+    textAlign: "center",
+    lineHeight: 26,
+    maxWidth: 300,
   },
   buttonLogin: {
     backgroundColor: "#FFB74D", // Laranja Claro
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 10,
+    paddingVertical: 14,
+    paddingHorizontal: 30,
+    borderRadius: 10,
     width: "100%",
     alignItems: "center",
-  },
-  buttonRegister: {
-    borderWidth: 2,
-    borderColor: "#A9B77D", // Verde Oliva
-    padding: 15,
-    borderRadius: 8,
-    width: "100%",
-    alignItems: "center",
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    elevation: 2,
   },
   buttonText: {
     color: "#fff",
-    fontWeight: "bold",
+    fontWeight: "600",
+    fontSize: 16,
+  },
+  buttonRegister: {
+    marginTop: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: "#A9B77D", // Verde Oliva
+    width: "100%",
+    alignItems: "center",
   },
   buttonTextRegister: {
     color: "#A9B77D",
-    fontWeight: "bold",
+    fontWeight: "600",
+    fontSize: 16,
   },
 });
