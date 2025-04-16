@@ -1,8 +1,6 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import Header from "../Componentes/Header";
-import { Image } from "react-native";
-import { StyleSheet } from "react-native";
 
 export default function TelaHome({ navigation }) {
   return (
