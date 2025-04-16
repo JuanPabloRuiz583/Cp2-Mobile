@@ -1,6 +1,8 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import Header from "../Componentes/Header";
+import { Image } from "react-native";
+import { StyleSheet } from "react-native";
 
 export default function TelaHome({ navigation }) {
   return (
@@ -15,13 +17,6 @@ export default function TelaHome({ navigation }) {
         <Text style={styles.subtitle}>
           Conectando doadores e comunidades para combater a fome com amor e solidariedade.
         </Text>
-
-        {/* Imagem ilustrativa opcional */}
-        <Image
-          source={require("../assets/comida-solidaria.png")}
-          style={styles.image}
-          resizeMode="contain"
-        />
 
         <TouchableOpacity style={styles.buttonLogin} onPress={() => navigation.navigate("TelaLogin")}>
           <Text style={styles.buttonText}>Já tenho conta</Text>
