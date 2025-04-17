@@ -4,7 +4,6 @@ import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 export default function Header({ onLoginPress, onRegisterPress }) {
   return (
     <View style={styles.header}>
-      <Text style={styles.headerTitle}>Combate a fome</Text>
       <View style={styles.headerButtons}>
         <TouchableOpacity style={styles.button} onPress={onLoginPress}>
           <Text style={styles.buttonText}>Login</Text>
@@ -20,15 +19,12 @@ export default function Header({ onLoginPress, onRegisterPress }) {
 const styles = StyleSheet.create({
   header: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
-    padding: 16,
-    backgroundColor: "black",
-  },
-  headerTitle: {
-    color: "#fff",
-    fontSize: 20,
-    fontWeight: "bold",
+    padding: 26,
+    paddingTop: 60,
+    width: "100%",
+
   },
   headerButtons: {
     flexDirection: "row",
@@ -37,11 +33,11 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     paddingVertical: 8,
     paddingHorizontal: 12,
-    backgroundColor: "#03dac6",
+    backgroundColor: "#FFB74D", // Laranja Claro
     borderRadius: 5,
   },
   registerButton: {
-    backgroundColor: "#ff0266",
+    backgroundColor: "#FF7043", // Laranja Escuro
   },
   buttonText: {
     color: "#fff",

@@ -11,7 +11,9 @@ export default function TelaHome({ navigation }) {
       />
 
       <View style={styles.content}>
-        <Text style={styles.title}>Alimento para Todos</Text>
+      <Image
+      source={require("../assets/comida-solidaria.png")}
+      style={styles.logo}/>
         <Text style={styles.subtitle}>
           Conectando doadores e comunidades para combater a fome com amor e solidariedade.
         </Text>
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
   image: {
     width: 160,
     height: 160,
-    marginBottom: 20,
+    marginBottom: 0,
   },
   title: {
     fontSize: 32,
@@ -83,5 +85,11 @@ const styles = StyleSheet.create({
     color: "#A9B77D",
     fontWeight: "600",
     fontSize: 16,
+  },
+  logo: {
+    width: 500,
+    height: 500,
+    resizeMode: "contain",
+    marginBottom: 16,
   },
 });
