@@ -1,7 +1,7 @@
 import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 
-export default function Header({ onLoginPress, onRegisterPress, onMembersPress }) {
+export default function Header({ onLoginPress, onRegisterPress, onMembersPress, onFormPress }) {
   return (
     <View style={styles.header}>
       <View style={styles.headerButtons}>
@@ -13,6 +13,9 @@ export default function Header({ onLoginPress, onRegisterPress, onMembersPress }
         </TouchableOpacity>
         <TouchableOpacity style={[styles.button]} onPress={onMembersPress }>
           <Text style={styles.buttonText}>Participantes</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button, styles.registerButton]} onPress={onFormPress}>
+          <Text style={styles.buttonText}>Doação</Text>
         </TouchableOpacity>
       </View>
     </View>

@@ -3,19 +3,19 @@ import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 export default function TelaParticipantes({ navigation }) {
   const participantes = [
     {
-      nome: "Natasha",
+      nome: "Natasha Lopes",
       rm: "RM554816",
       foto: require("../assets/natasha.png"), 
     },
     {
-      nome: "Bárbara",
+      nome: "Bárbara Dias",
       rm: "RM556974",
-      foto: "https://via.placeholder.com/150", 
+      foto: require("../assets/barbara.png"), 
     },
     {
-      nome: "Juan",
+      nome: "Juan Pablo",
       rm: "RM557727",
-      foto: "https://via.placeholder.com/150", 
+      foto: require("../assets/juan.png"),  
     },
   ];
 
@@ -74,11 +74,11 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 22,
     fontWeight: "600",
-    color: "#444",
+    color: "#FFB74D",
     marginBottom: 5,
   },
   rm: {
     fontSize: 16,
-    color: "#777",
+    color: "#F1E0C6",
   },
 });

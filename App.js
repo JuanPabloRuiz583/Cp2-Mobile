@@ -4,7 +4,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import TelaHome from "./src/Telas/TelaHome";
 import TelaCadastro from "./src/Telas/TelaCadastro";
 import TelaLogin from "./src/Telas/TelaLogin";
-import TelaParticipantes from  "./src/Telas/TelaParticipantes"
+import TelaParticipantes from  "./src/Telas/TelaParticipantes";
+import TelaFormulario from  "./src/Telas/TelaFormulario";
 import 'react-native-gesture-handler';
 
 const Stack = createStackNavigator();
@@ -32,6 +33,11 @@ export default function App() {
           name="TelaParticipantes"
           component={TelaParticipantes}
           options={{ title: "Participantes" }} // Define o título da tela
+        />
+        <Stack.Screen
+          name="TelaFormulario"
+          component={TelaFormulario}
+          options={{ title: "Doação" }} // Define o título da tela
         />
       </Stack.Navigator>
     </NavigationContainer>

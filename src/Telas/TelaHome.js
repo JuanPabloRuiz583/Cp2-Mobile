@@ -9,6 +9,7 @@ export default function TelaHome({ navigation }) {
         onLoginPress={() => navigation.navigate("TelaLogin")}
         onRegisterPress={() => navigation.navigate("TelaCadastro")}
         onMembersPress={()=> navigation.navigate("TelaParticipantes")}
+        onFormPress={()=> navigation.navigate("TelaFormulario")}
       />
 
       <View style={styles.content}>
